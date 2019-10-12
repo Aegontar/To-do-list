@@ -36,3 +36,18 @@ e.target.parentElement.remove();
 }
   
 });
+
+// edit todos
+
+
+list.addEventListener("click", e => {
+
+if (e.target.classList.contains('edit')){
+
+addForm.add.value = e.target.parentElement.textContent.trim();
+
+e.target.parentElement.remove();
+
+};
+
+});
